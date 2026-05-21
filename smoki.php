@@ -13,18 +13,18 @@
     <h2>Poznaj smoki!</h2>
   </header>
   <nav>
-    <div class="baza">
-      <p>Baza</p>
+    <div id="baza1">
+      Baza
     </div>
-    <div class="opisy">
-      <p>Opisy</p>
+    <div id="opisy1">
+      Opisy
     </div>
-    <div class="galeria">
-      <p>Galeria</p>
+    <div id="galeria1">
+      Galeria
     </div>
   </nav>
   <main>
-    <section>
+    <section id="baza">
       <h3>Baza Smoków</h3>
       <form action="" method="post">
         <select name="pochodzenie" id="">
@@ -66,7 +66,7 @@
         </tr>
       </table>
     </section>
-    <section>
+    <section id="opisy">
       <h3>Opisy smoków</h3>
       <dl>
         <dt>Smok czerwony</dt>
@@ -90,16 +90,50 @@
         </dd>
       </dl>
     </section>
-    <section>
+    <section id="galeria">
       <h3>Galeria</h3>
-      <img src="smok1.JPG" alt="Smok czerwony" />
-      <img src="smok2.JPG" alt="Smok wielki" />
-      <img src="smok3.JPG" alt="Skrzydlaty łaciaty" />
+      <article> <img src="smok1.JPG" alt="Smok czerwony" />
+        <img src="smok2.JPG" alt="Smok wielki" />
+        <img src="smok3.JPG" alt="Skrzydlaty łaciaty" />
+      </article>
+
     </section>
   </main>
   <footer>
     <p>Stronę opracował: </p>
   </footer>
+  <script>
+    blok1 = document.getElementById('baza1');
+    blok2 = document.getElementById('opisy1');
+    blok3 = document.getElementById('galeria1');
+    section1 = document.getElementById('baza');
+    section2 = document.getElementById('opisy');
+    section3 = document.getElementById('galeria');
+    blok1.addEventListener('click', () => {
+      blok1.style.backgroundColor = 'MistyRose';
+      blok2.style.backgroundColor = '#FFAEA5';
+      blok3.style.backgroundColor = '#FFAEA5';
+      section1.style.display = "flex";
+      section2.style.display = "none";
+      section3.style.display = "none";
+    });
+    blok2.addEventListener('click', () => {
+      blok1.style.backgroundColor = '#FFAEA5';
+      blok2.style.backgroundColor = 'MistyRose';
+      blok3.style.backgroundColor = '#FFAEA5';
+      section1.style.display = "none";
+      section2.style.display = "flex";
+      section3.style.display = "none";
+    });
+    blok3.addEventListener('click', () => {
+      blok1.style.backgroundColor = '#FFAEA5';
+      blok2.style.backgroundColor = '#FFAEA5';
+      blok3.style.backgroundColor = 'MistyRose';
+      section1.style.display = "none";
+      section2.style.display = "none";
+      section3.style.display = "flex";
+    });
+  </script>
 </body>
 
 </html>
