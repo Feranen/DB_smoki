@@ -1,0 +1,65 @@
+* {
+  text-align: center;
+  font-family: Georgia;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: Tomato;
+  color: mistyrose;
+  padding: 10px;
+}
+
+nav {
+  width: 20%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+div {
+  background-color: #ffaea5;
+  height: 170px;
+  font-size: 200%;
+}
+
+.baza {
+  background-color: mistyrose;
+}
+
+main {
+  background-color: mistyrose;
+  width: 80%;
+  height: 510px;
+  overflow: auto;
+  float: right;
+}
+
+section:nth-child(2) {
+  display: none;
+}
+section:nth-child(3) {
+  display: none;
+}
+
+table {
+  margin: auto;
+  width: 60%;
+  border: dashed 1px indigo;
+}
+
+select,
+button {
+  margin: 20px;
+}
+dt {
+  font-weight: bold;
+  font-style: italic;
+}
+
+dt:hover {
+  font-size: 180%;
+}
