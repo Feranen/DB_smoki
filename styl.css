@@ -24,6 +24,7 @@ div {
   background-color: #ffaea5;
   height: 170px;
   font-size: 200%;
+  cursor: pointer;
 }
 
 div:nth-child(1) {
